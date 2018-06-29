@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- character encoding -->
+        <meta charset="UTF-8">
+        <!-- title tag -->
+        <title>Product project page-Cummings</title>
+        <!-- mobile-friendly viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- W3.CSS stylesheet -->
+        <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- custom style -->
+        <link rel="stylesheet" type="text/css" href="css/colortheme.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Syncopate:700" rel="stylesheet">
+    </head>
+    <!--659 by387-->
+
+    <body style="background-color:#f7f587">
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme">
+                <a href="#home" class="w3-bar-item w3-button">Home</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+                <a href="#menu" class="w3-bar-item w3-button w3-hide-small">Menu</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#home" class="w3-bar-item w3-button">Home</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+                <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+            </div>
+        </div>
+        <section style="padding-top:38px">
+        <h1>Hello and welcome to the depot</h1>
+        
+        <p></p>
+        </section>
+        <section id="home">
+        <div class="w3-content">
+            <img src="img/depot.jpg" class="mySlides w3-image" style="width:100%; padding-top:38px">
+            <img src="img/Salad.jpg" class="mySlides w3-image" style="width:100%; padding-top:38px">
+
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        </section>
+        <section id="contact" style="padding-top:28px; padding-bottom:28px;">
+            <button onclick="myAccordian('dailyHours')" class="w3-btn w3-block w3-theme-l1 w3-left-align">Daily Hours!<i class="fa fa-hourglass"></i></button>
+            <div id="dailyHours" class="w3-container w3-hide">
+                <h4>We are open 7 days a week!</h4>
+                <ul class="w3-ul w3-content">
+                    <li>Monday:	10am - 10pm</li>
+                    <li>Tuesday:	10am - 10pm</li>
+                    <li>Wednesday:	10am - 10pm</li>
+                    <li>Thursday:	10am - 10pm</li>
+                    <li>Friday:	10am - 10pm</li>
+                    <li>Saturday:	10am - 10pm</li>
+                    <li>Sunday:	10am - 10pm</li>
+                </ul>
+            </div>
+            <button onclick="myAccordian('Contactinfo')" class="w3-btn w3-block w3-theme-l1 w3-left-align">Contact Info!<i class="fa fa-phone"></i></button>
+            <div id="Contactinfo" class="w3-container w3-hide">
+                <h4>Heres how you can contact us!</h4>
+                <ul class="w3-ul w3-content">
+                    <li>Depot House of Pizza</li>
+                    <li>53 Essex Street</li>
+                    <li>Andover, MA 01810</li>
+                    <li>978-475-0055</li>
+                </ul>
+            </div>
+            <button onclick="myAccordian('Map')" class="w3-btn w3-block w3-theme-l1 w3-left-align">Map to us!<i class="fa fa-map"></i></button>
+            <div id="Map" class="w3-container w3-hide">
+                <div>
+                    <h1>Click on map for directions</h1>
+                    <a href="https://goo.gl/maps/fdduBhTYYg42" target="_blank"><img src="img/map.jpg" class="w3-img" border="0" class="img" /></a></div>
+            </div>
+        </section>
+        <section id="menu" class="w3-center">
+            <a href="https://www.depothouseofpizza.com/menu.html" target="_blank"><h1>Here is our menu</h1></a>
+        </section>
+        <!--js links-->
+        <script src="js/topNav.js"></script>
+        <script src="js/slideshow.js"></script>
+        <script src="js/accordian.js"></script>
+    </body>
+
+</html>
